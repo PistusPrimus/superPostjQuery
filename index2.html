@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Framework - HomePage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <!-- Including javascript scripts -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/myPlugin.js"></script>
+  </head>
+
+  <body>
+
+  <h1 style="margin-left:15px;">Another framework test</h1>
+
+  <div class="row-fluid" style="margin-top:50px;">
+    <div class="col-lg-8" style="margin-left:0 auto;">
+        <ul>
+        <!-- Ho una lista inzialmente vuota -->
+        <!-- Appenderò i -li- corrispondenti -->
+        </ul>
+    <!-- It contains standard callback url -->
+        <input style="display:none;" class="param" data-url="callbacks/callback2.php">
+        
+        <span class="param" data-model="<li id='{1}'>{2}</li>"></span>
+
+        <div>
+            <textarea style="resize:none; width:70%; height:100px;" class="param"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary submit" style="margin-top:10px;">Send</button>
+    </div>
+
+    <div class="col-lg-3" style="border:1px solid black;">
+        
+
+    </div>
+  </div>
+
+  </body>
+
+</html>
+
+<script type="text/javascript">
+    $('body').super("post",{mode:"change"});
+</script>
