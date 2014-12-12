@@ -20,21 +20,21 @@
         <!-- Ho una lista inzialmente vuota -->
         <!-- Appenderò i -li- corrispondenti -->
         </ul>
+                <div class="bs"><img src="img/loader.gif" style="width:4%; display:none;"></div>
     <!-- It contains standard callback url -->
         <input style="display:none;" class="param" data-url="callbacks/callback2.php">
         
         <span class="param" data-model="<li id='{1}'>{2}</li>"></span>
 
         <div>
-            <textarea style="resize:none; width:70%; height:100px;" class="param"></textarea>
+            <textarea style="resize:none; width:70%; height:100px; margin-top:30px;" class="param"></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary submit" style="margin-top:10px;">Send</button>
     </div>
 
-    <div class="col-lg-3" style="border:1px solid black;">
-        
-
+    <div class="col-lg-3 ap" style="display:none;">
+        <h3>Query eseguita!</h3>
     </div>
   </div>
 
@@ -43,5 +43,5 @@
 </html>
 
 <script type="text/javascript">
-    $('body').super("post",{mode:"change"});
+    $('body').super("post",{mode:"all",async:"false",loader:"true",timeLoader:"100",both:"true"});
 </script>
